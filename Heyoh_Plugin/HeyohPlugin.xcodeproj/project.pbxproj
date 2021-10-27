@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D91403525D80FD500D7C6A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91403425D80FD500D7C6A6 /* AppDelegate.swift */; };
+		4D91403C25D80FD600D7C6A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D91403A25D80FD600D7C6A6 /* Main.storyboard */; };
+		4D91404725D8107D00D7C6A6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91404625D8107D00D7C6A6 /* main.swift */; };
+		8A5DEBD327243C950029F544 /* DevicePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DEBD027243C950029F544 /* DevicePreviewView.xib */; };
+		8A5DEBD427243C950029F544 /* DevicePreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DEBD027243C950029F544 /* DevicePreviewView.xib */; };
+		8A5DEBD527243C950029F544 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DEBD127243C950029F544 /* LoadableView.swift */; };
+		8A5DEBD627243C950029F544 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DEBD127243C950029F544 /* LoadableView.swift */; };
+		8A5DEBD727243C950029F544 /* DevicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DEBD227243C950029F544 /* DevicePreviewView.swift */; };
+		8A5DEBD827243C950029F544 /* DevicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DEBD227243C950029F544 /* DevicePreviewView.swift */; };
+		8A5DEC1627243E100029F544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DEC1527243E100029F544 /* AppDelegate.swift */; };
+		8A5DECE42724499D0029F544 /* PluginInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECC42724499D0029F544 /* PluginInterface.swift */; };
+		8A5DECE52724499D0029F544 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECC52724499D0029F544 /* Property.swift */; };
+		8A5DECE62724499D0029F544 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECC62724499D0029F544 /* Stream.swift */; };
+		8A5DECE72724499D0029F544 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECC72724499D0029F544 /* Log.swift */; };
+		8A5DECE82724499D0029F544 /* CVPixelBuffer+SimpleDALPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECC82724499D0029F544 /* CVPixelBuffer+SimpleDALPlugin.swift */; };
+		8A5DECEB2724499D0029F544 /* detection_v5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECCE2724499D0029F544 /* detection_v5.mlmodel */; };
+		8A5DECEC2724499D0029F544 /* detection_v5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECCF2724499D0029F544 /* detection_v5.swift */; };
+		8A5DECED2724499D0029F544 /* CALayer+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD12724499D0029F544 /* CALayer+Position.swift */; };
+		8A5DECEE2724499D0029F544 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD22724499D0029F544 /* Image.swift */; };
+		8A5DECF02724499D0029F544 /* DetectionTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD52724499D0029F544 /* DetectionTrack.swift */; };
+		8A5DECF12724499D0029F544 /* ModelDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD62724499D0029F544 /* ModelDetectionService.swift */; };
+		8A5DECF22724499D0029F544 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD72724499D0029F544 /* DeviceService.swift */; };
+		8A5DECF32724499D0029F544 /* SmileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD82724499D0029F544 /* SmileOverlay.swift */; };
+		8A5DECF42724499D0029F544 /* LowPassFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDA2724499D0029F544 /* LowPassFilter.swift */; };
+		8A5DECF52724499D0029F544 /* OneEuroFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDB2724499D0029F544 /* OneEuroFilter.swift */; };
+		8A5DECF62724499D0029F544 /* CameraCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDC2724499D0029F544 /* CameraCaptureService.swift */; };
+		8A5DECF72724499D0029F544 /* DetectionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDD2724499D0029F544 /* DetectionStruct.swift */; };
+		8A5DECF82724499D0029F544 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDE2724499D0029F544 /* Device.swift */; };
+		8A5DECF92724499D0029F544 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDF2724499D0029F544 /* Object.swift */; };
+		8A5DECFA2724499D0029F544 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECE02724499D0029F544 /* Main.swift */; };
+		8A5DECFC2724499D0029F544 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECE32724499D0029F544 /* Plugin.swift */; };
+		8A5DECFD272449AE0029F544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DEC1527243E100029F544 /* AppDelegate.swift */; };
+		8A5DECFE272449D10029F544 /* CALayer+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD12724499D0029F544 /* CALayer+Position.swift */; };
+		8A5DECFF272449D40029F544 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD22724499D0029F544 /* Image.swift */; };
+		8A5DED00272449D90029F544 /* ModelDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD62724499D0029F544 /* ModelDetectionService.swift */; };
+		8A5DED01272449D90029F544 /* SmileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD82724499D0029F544 /* SmileOverlay.swift */; };
+		8A5DED02272449D90029F544 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD72724499D0029F544 /* DeviceService.swift */; };
+		8A5DED04272449D90029F544 /* DetectionTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECD52724499D0029F544 /* DetectionTrack.swift */; };
+		8A5DED05272449DC0029F544 /* DetectionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDD2724499D0029F544 /* DetectionStruct.swift */; };
+		8A5DED06272449DC0029F544 /* CameraCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDC2724499D0029F544 /* CameraCaptureService.swift */; };
+		8A5DED07272449E10029F544 /* LowPassFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDA2724499D0029F544 /* LowPassFilter.swift */; };
+		8A5DED08272449E10029F544 /* OneEuroFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECDB2724499D0029F544 /* OneEuroFilter.swift */; };
+		8A5DED09272449EF0029F544 /* detection_v5.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECCE2724499D0029F544 /* detection_v5.mlmodel */; };
+		8A5DED0A272449F20029F544 /* detection_v5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECCF2724499D0029F544 /* detection_v5.swift */; };
+		8A5DED0B27244A0A0029F544 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DECC72724499D0029F544 /* Log.swift */; };
+		8A71B12D2726A1A30072B2A7 /* Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D91403225D80FD500D7C6A6 /* Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A71B12E2726A2AE0072B2A7 /* Heyoh Camera.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEF5B52F2453D9B300E7FC18 /* Heyoh Camera.plugin */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8AC891FC25D1C14000C51EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC891FA25D1C14000C51EB4 /* Main.storyboard */; };
+		8AC8920B25D1C24400C51EB4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8920925D1C24400C51EB4 /* Media.xcassets */; };
+		8AC8920C25D1C24400C51EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8920A25D1C24400C51EB4 /* Assets.xcassets */; };
+		8AE3609925D2BF6800623C35 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8920925D1C24400C51EB4 /* Media.xcassets */; };
+		BEF5B53D2453DFA200E7FC18 /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF5B53C2453DFA200E7FC18 /* CoreMediaIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D03949625DC0A85003C6C51 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8A71B12E2726A2AE0072B2A7 /* Heyoh Camera.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D91404F25DA73DA00D7C6A6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				8A71B12D2726A1A30072B2A7 /* Launcher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DA424CE25D5C81C00170106 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D91403225D80FD500D7C6A6 /* Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D91403425D80FD500D7C6A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D91403B25D80FD600D7C6A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D91403D25D80FD600D7C6A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D91403E25D80FD600D7C6A6 /* Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Launcher.entitlements; sourceTree = "<group>"; };
+		4D91404625D8107D00D7C6A6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8A5DEBD027243C950029F544 /* DevicePreviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevicePreviewView.xib; sourceTree = "<group>"; };
+		8A5DEBD127243C950029F544 /* LoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
+		8A5DEBD227243C950029F544 /* DevicePreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicePreviewView.swift; sourceTree = "<group>"; };
+		8A5DEC1527243E100029F544 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		8A5DECC42724499D0029F544 /* PluginInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginInterface.swift; sourceTree = "<group>"; };
+		8A5DECC52724499D0029F544 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		8A5DECC62724499D0029F544 /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		8A5DECC72724499D0029F544 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		8A5DECC82724499D0029F544 /* CVPixelBuffer+SimpleDALPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+SimpleDALPlugin.swift"; sourceTree = "<group>"; };
+		8A5DECCE2724499D0029F544 /* detection_v5.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = detection_v5.mlmodel; sourceTree = "<group>"; };
+		8A5DECCF2724499D0029F544 /* detection_v5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detection_v5.swift; sourceTree = "<group>"; };
+		8A5DECD12724499D0029F544 /* CALayer+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Position.swift"; sourceTree = "<group>"; };
+		8A5DECD22724499D0029F544 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		8A5DECD52724499D0029F544 /* DetectionTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionTrack.swift; sourceTree = "<group>"; };
+		8A5DECD62724499D0029F544 /* ModelDetectionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDetectionService.swift; sourceTree = "<group>"; };
+		8A5DECD72724499D0029F544 /* DeviceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		8A5DECD82724499D0029F544 /* SmileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileOverlay.swift; sourceTree = "<group>"; };
+		8A5DECDA2724499D0029F544 /* LowPassFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowPassFilter.swift; sourceTree = "<group>"; };
+		8A5DECDB2724499D0029F544 /* OneEuroFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneEuroFilter.swift; sourceTree = "<group>"; };
+		8A5DECDC2724499D0029F544 /* CameraCaptureService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCaptureService.swift; sourceTree = "<group>"; };
+		8A5DECDD2724499D0029F544 /* DetectionStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionStruct.swift; sourceTree = "<group>"; };
+		8A5DECDE2724499D0029F544 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		8A5DECDF2724499D0029F544 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		8A5DECE02724499D0029F544 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		8A5DECE12724499D0029F544 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5DECE22724499D0029F544 /* SimpleDALPlugin-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SimpleDALPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A5DECE32724499D0029F544 /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		8AC891F225D1C13F00C51EB4 /* Heyoh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heyoh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC891FB25D1C14000C51EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AC891FD25D1C14000C51EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC8920925D1C24400C51EB4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		8AC8920A25D1C24400C51EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEF5B52F2453D9B300E7FC18 /* Heyoh Camera.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heyoh Camera.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF5B53C2453DFA200E7FC18 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D91402F25D80FD500D7C6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC891EF25D1C13F00C51EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF5B52C2453D9B300E7FC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF5B53D2453DFA200E7FC18 /* CoreMediaIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D91403325D80FD500D7C6A6 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				4D91403425D80FD500D7C6A6 /* AppDelegate.swift */,
+				4D91403A25D80FD600D7C6A6 /* Main.storyboard */,
+				4D91404625D8107D00D7C6A6 /* main.swift */,
+				4D91403D25D80FD600D7C6A6 /* Info.plist */,
+				4D91403E25D80FD600D7C6A6 /* Launcher.entitlements */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		8A5DEBCE27243C950029F544 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECC92724499D0029F544 /* Heyoh */,
+				8A5DECC32724499D0029F544 /* HeyohPlugin */,
+				8A5DEBCF27243C950029F544 /* Views */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		8A5DEBCF27243C950029F544 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DEBD027243C950029F544 /* DevicePreviewView.xib */,
+				8A5DEBD127243C950029F544 /* LoadableView.swift */,
+				8A5DEBD227243C950029F544 /* DevicePreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A5DECC32724499D0029F544 /* HeyohPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECC42724499D0029F544 /* PluginInterface.swift */,
+				8A5DECC52724499D0029F544 /* Property.swift */,
+				8A5DECC62724499D0029F544 /* Stream.swift */,
+				8A5DECC72724499D0029F544 /* Log.swift */,
+				8A5DECC82724499D0029F544 /* CVPixelBuffer+SimpleDALPlugin.swift */,
+				8A5DECDE2724499D0029F544 /* Device.swift */,
+				8A5DECDF2724499D0029F544 /* Object.swift */,
+				8A5DECE02724499D0029F544 /* Main.swift */,
+				8A5DECE12724499D0029F544 /* Info.plist */,
+				8A5DECE22724499D0029F544 /* SimpleDALPlugin-Bridging-Header.h */,
+				8A5DECE32724499D0029F544 /* Plugin.swift */,
+			);
+			path = HeyohPlugin;
+			sourceTree = "<group>";
+		};
+		8A5DECC92724499D0029F544 /* Heyoh */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECCA2724499D0029F544 /* Resources */,
+				8A5DECD02724499D0029F544 /* Extensions */,
+				8A5DECD32724499D0029F544 /* Services */,
+			);
+			path = Heyoh;
+			sourceTree = "<group>";
+		};
+		8A5DECCA2724499D0029F544 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8920A25D1C24400C51EB4 /* Assets.xcassets */,
+				8AC8920925D1C24400C51EB4 /* Media.xcassets */,
+				8A5DECCD2724499D0029F544 /* Model */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A5DECCD2724499D0029F544 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECCE2724499D0029F544 /* detection_v5.mlmodel */,
+				8A5DECCF2724499D0029F544 /* detection_v5.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A5DECD02724499D0029F544 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECD12724499D0029F544 /* CALayer+Position.swift */,
+				8A5DECD22724499D0029F544 /* Image.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A5DECD32724499D0029F544 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECD52724499D0029F544 /* DetectionTrack.swift */,
+				8A5DECD62724499D0029F544 /* ModelDetectionService.swift */,
+				8A5DECD72724499D0029F544 /* DeviceService.swift */,
+				8A5DECD82724499D0029F544 /* SmileOverlay.swift */,
+				8A5DECD92724499D0029F544 /* OneEuroFilter */,
+				8A5DECDC2724499D0029F544 /* CameraCaptureService.swift */,
+				8A5DECDD2724499D0029F544 /* DetectionStruct.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A5DECD92724499D0029F544 /* OneEuroFilter */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DECDA2724499D0029F544 /* LowPassFilter.swift */,
+				8A5DECDB2724499D0029F544 /* OneEuroFilter.swift */,
+			);
+			path = OneEuroFilter;
+			sourceTree = "<group>";
+		};
+		8AC891F325D1C13F00C51EB4 /* Heyoh */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DEBCE27243C950029F544 /* Classes */,
+				8A5DEC1527243E100029F544 /* AppDelegate.swift */,
+				8AC891FA25D1C14000C51EB4 /* Main.storyboard */,
+				8AC891FD25D1C14000C51EB4 /* Info.plist */,
+			);
+			path = Heyoh;
+			sourceTree = "<group>";
+		};
+		BEF5B5262453D9B300E7FC18 = {
+			isa = PBXGroup;
+			children = (
+				8AC891F325D1C13F00C51EB4 /* Heyoh */,
+				4D91403325D80FD500D7C6A6 /* Launcher */,
+				BEF5B5302453D9B300E7FC18 /* Products */,
+				BEF5B53B2453DFA200E7FC18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF5B5302453D9B300E7FC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF5B52F2453D9B300E7FC18 /* Heyoh Camera.plugin */,
+				8AC891F225D1C13F00C51EB4 /* Heyoh.app */,
+				4D91403225D80FD500D7C6A6 /* Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF5B53B2453DFA200E7FC18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF5B53C2453DFA200E7FC18 /* CoreMediaIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D91403125D80FD500D7C6A6 /* Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D91403F25D80FD600D7C6A6 /* Build configuration list for PBXNativeTarget "Launcher" */;
+			buildPhases = (
+				4D91402E25D80FD500D7C6A6 /* Sources */,
+				4D91402F25D80FD500D7C6A6 /* Frameworks */,
+				4D91403025D80FD500D7C6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Launcher;
+			productName = Launcher;
+			productReference = 4D91403225D80FD500D7C6A6 /* Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AC891F125D1C13F00C51EB4 /* Heyoh_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AC8920125D1C14100C51EB4 /* Build configuration list for PBXNativeTarget "Heyoh_OSX" */;
+			buildPhases = (
+				8AC891EE25D1C13F00C51EB4 /* Sources */,
+				8AC891EF25D1C13F00C51EB4 /* Frameworks */,
+				8AC891F025D1C13F00C51EB4 /* Resources */,
+				4D91404F25DA73DA00D7C6A6 /* CopyFiles */,
+				4D03949625DC0A85003C6C51 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Heyoh_OSX;
+			productName = Heyoh_OSX;
+			productReference = 8AC891F225D1C13F00C51EB4 /* Heyoh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEF5B52E2453D9B300E7FC18 /* HeyohPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF5B5352453D9B300E7FC18 /* Build configuration list for PBXNativeTarget "HeyohPlugin" */;
+			buildPhases = (
+				BEF5B52B2453D9B300E7FC18 /* Sources */,
+				BEF5B52C2453D9B300E7FC18 /* Frameworks */,
+				BEF5B52D2453D9B300E7FC18 /* Resources */,
+				4DA424CE25D5C81C00170106 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeyohPlugin;
+			productName = SimpleDALPlugin;
+			productReference = BEF5B52F2453D9B300E7FC18 /* Heyoh Camera.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF5B5272453D9B300E7FC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = com.heyoh;
+				TargetAttributes = {
+					4D91403125D80FD500D7C6A6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8AC891F125D1C13F00C51EB4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BEF5B52E2453D9B300E7FC18 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = BEF5B52A2453D9B300E7FC18 /* Build configuration list for PBXProject "HeyohPlugin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEF5B5262453D9B300E7FC18;
+			productRefGroup = BEF5B5302453D9B300E7FC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF5B52E2453D9B300E7FC18 /* HeyohPlugin */,
+				8AC891F125D1C13F00C51EB4 /* Heyoh_OSX */,
+				4D91403125D80FD500D7C6A6 /* Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D91403025D80FD500D7C6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D91403C25D80FD600D7C6A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC891F025D1C13F00C51EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC8920B25D1C24400C51EB4 /* Media.xcassets in Resources */,
+				8AC8920C25D1C24400C51EB4 /* Assets.xcassets in Resources */,
+				8AC891FC25D1C14000C51EB4 /* Main.storyboard in Resources */,
+				8A5DEBD427243C950029F544 /* DevicePreviewView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF5B52D2453D9B300E7FC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE3609925D2BF6800623C35 /* Media.xcassets in Resources */,
+				8A5DEBD327243C950029F544 /* DevicePreviewView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D91402E25D80FD500D7C6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D91404725D8107D00D7C6A6 /* main.swift in Sources */,
+				4D91403525D80FD500D7C6A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC891EE25D1C13F00C51EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5DED01272449D90029F544 /* SmileOverlay.swift in Sources */,
+				8A5DED08272449E10029F544 /* OneEuroFilter.swift in Sources */,
+				8A5DECFD272449AE0029F544 /* AppDelegate.swift in Sources */,
+				8A5DED00272449D90029F544 /* ModelDetectionService.swift in Sources */,
+				8A5DED07272449E10029F544 /* LowPassFilter.swift in Sources */,
+				8A5DEBD827243C950029F544 /* DevicePreviewView.swift in Sources */,
+				8A5DED0A272449F20029F544 /* detection_v5.swift in Sources */,
+				8A5DECFE272449D10029F544 /* CALayer+Position.swift in Sources */,
+				8A5DED0B27244A0A0029F544 /* Log.swift in Sources */,
+				8A5DED04272449D90029F544 /* DetectionTrack.swift in Sources */,
+				8A5DEBD627243C950029F544 /* LoadableView.swift in Sources */,
+				8A5DED09272449EF0029F544 /* detection_v5.mlmodel in Sources */,
+				8A5DECFF272449D40029F544 /* Image.swift in Sources */,
+				8A5DED02272449D90029F544 /* DeviceService.swift in Sources */,
+				8A5DED05272449DC0029F544 /* DetectionStruct.swift in Sources */,
+				8A5DED06272449DC0029F544 /* CameraCaptureService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF5B52B2453D9B300E7FC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5DECF32724499D0029F544 /* SmileOverlay.swift in Sources */,
+				8A5DECEC2724499D0029F544 /* detection_v5.swift in Sources */,
+				8A5DECF52724499D0029F544 /* OneEuroFilter.swift in Sources */,
+				8A5DECEE2724499D0029F544 /* Image.swift in Sources */,
+				8A5DECEB2724499D0029F544 /* detection_v5.mlmodel in Sources */,
+				8A5DECE82724499D0029F544 /* CVPixelBuffer+SimpleDALPlugin.swift in Sources */,
+				8A5DECE52724499D0029F544 /* Property.swift in Sources */,
+				8A5DECE72724499D0029F544 /* Log.swift in Sources */,
+				8A5DECF12724499D0029F544 /* ModelDetectionService.swift in Sources */,
+				8A5DECF42724499D0029F544 /* LowPassFilter.swift in Sources */,
+				8A5DECF82724499D0029F544 /* Device.swift in Sources */,
+				8A5DECF62724499D0029F544 /* CameraCaptureService.swift in Sources */,
+				8A5DECE62724499D0029F544 /* Stream.swift in Sources */,
+				8A5DECE42724499D0029F544 /* PluginInterface.swift in Sources */,
+				8A5DECF92724499D0029F544 /* Object.swift in Sources */,
+				8A5DECF72724499D0029F544 /* DetectionStruct.swift in Sources */,
+				8A5DEBD527243C950029F544 /* LoadableView.swift in Sources */,
+				8A5DECFC2724499D0029F544 /* Plugin.swift in Sources */,
+				8A5DECFA2724499D0029F544 /* Main.swift in Sources */,
+				8A5DEC1627243E100029F544 /* AppDelegate.swift in Sources */,
+				8A5DECF02724499D0029F544 /* DetectionTrack.swift in Sources */,
+				8A5DECED2724499D0029F544 /* CALayer+Position.swift in Sources */,
+				8A5DEBD727243C950029F544 /* DevicePreviewView.swift in Sources */,
+				8A5DECF22724499D0029F544 /* DeviceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4D91403A25D80FD600D7C6A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D91403B25D80FD600D7C6A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AC891FA25D1C14000C51EB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AC891FB25D1C14000C51EB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D91404025D80FD600D7C6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W4EVQG69X8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyoh.camera.launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4D91404125D80FD600D7C6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Launcher/Launcher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W4EVQG69X8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Launcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyoh.camera.launcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8AC891FF25D1C14100C51EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Heyoh/Heyoh.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COREML_CODEGEN_LANGUAGE = None;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4EVQG69X8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classes/HeyohPlugin",
+				);
+				INFOPLIST_FILE = Heyoh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyoh.camera;
+				PRODUCT_NAME = Heyoh;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8AC8920025D1C14100C51EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Heyoh/Heyoh.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COREML_CODEGEN_LANGUAGE = None;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W4EVQG69X8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classes/HeyohPlugin",
+				);
+				INFOPLIST_FILE = Heyoh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyoh.camera;
+				PRODUCT_NAME = Heyoh;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BEF5B5332453D9B300E7FC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEF5B5342453D9B300E7FC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BEF5B5362453D9B300E7FC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COREML_CODEGEN_LANGUAGE = None;
+				DEVELOPMENT_TEAM = W4EVQG69X8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classes/HeyohPlugin",
+				);
+				INFOPLIST_FILE = Classes/HeyohPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyoh.camera;
+				PRODUCT_NAME = "Heyoh Camera";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/HeyohPlugin/SimpleDALPlugin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		BEF5B5372453D9B300E7FC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COREML_CODEGEN_LANGUAGE = None;
+				DEVELOPMENT_TEAM = W4EVQG69X8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classes/HeyohPlugin",
+				);
+				INFOPLIST_FILE = Classes/HeyohPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heyoh.camera;
+				PRODUCT_NAME = "Heyoh Camera";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/HeyohPlugin/SimpleDALPlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D91403F25D80FD600D7C6A6 /* Build configuration list for PBXNativeTarget "Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D91404025D80FD600D7C6A6 /* Debug */,
+				4D91404125D80FD600D7C6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AC8920125D1C14100C51EB4 /* Build configuration list for PBXNativeTarget "Heyoh_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC891FF25D1C14100C51EB4 /* Debug */,
+				8AC8920025D1C14100C51EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF5B52A2453D9B300E7FC18 /* Build configuration list for PBXProject "HeyohPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF5B5332453D9B300E7FC18 /* Debug */,
+				BEF5B5342453D9B300E7FC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF5B5352453D9B300E7FC18 /* Build configuration list for PBXNativeTarget "HeyohPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF5B5362453D9B300E7FC18 /* Debug */,
+				BEF5B5372453D9B300E7FC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEF5B5272453D9B300E7FC18 /* Project object */;
+}

@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo open -a /Applications/Heyoh.app
+sudo cp -r /Applications/Heyoh.app/Contents/Resources/Heyoh\ Camera.plugin /Library/CoreMediaIO/Plug-Ins/DAL
+exit 0

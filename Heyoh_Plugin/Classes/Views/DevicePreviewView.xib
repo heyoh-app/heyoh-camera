@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DevicePreviewView" customModule="Heyoh_OSX" customModuleProvider="target">
+            <connections>
+                <outlet property="camera" destination="jRY-m8-qc4" id="dU4-nE-AfJ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="jRY-m8-qc4">
+                    <rect key="frame" x="20" y="20" width="302" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jRY-m8-qc4" secondAttribute="height" multiplier="16:9" id="Vzc-rx-P8T"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jRY-m8-qc4" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" symbolic="YES" id="Acc-zm-wXc"/>
+                <constraint firstItem="jRY-m8-qc4" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Qxp-qc-WIs"/>
+                <constraint firstAttribute="trailing" secondItem="jRY-m8-qc4" secondAttribute="trailing" constant="20" symbolic="YES" id="oO8-CD-IDv"/>
+            </constraints>
+            <point key="canvasLocation" x="-273" y="111"/>
+        </customView>
+    </objects>
+</document>
